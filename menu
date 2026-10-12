@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC - Our Menu</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: white;
+        }
+
+        .navbar {
+            background-color: #999999;
+            border: 2px solid #222222;
+            border-radius: 0;
+            margin-bottom: 20px;
+        }
+
+        .navbar-default .navbar-brand {
+            color: #222222;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-default .navbar-toggle {
+            border: 2px solid #222222;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #222222;
+        }
+
+        #mobile-menu {
+            background-color: #eeeeee;
+        }
+
+        #mobile-menu .navbar-nav {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #mobile-menu .navbar-nav > li > a {
+            color: #222222;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #777777;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 25px 0 30px;
+        }
+
+        .menu-section {
+            background-color: #999999;
+            border: 2px solid #222222;
+            padding: 15px;
+            min-height: 1000px;
+            margin-bottom: 30px;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .menu-section p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            #mobile-menu {
+                display: none !important;
+            }
+
+            .navbar-toggle {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Food, LLC</a>
+
+            <button type="button"
+                    class="navbar-toggle collapsed visible-xs"
+                    data-toggle="collapse"
+                    data-target="#mobile-menu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse visible-xs" id="mobile-menu">
+            <ul class="nav navbar-nav">
+                <li><a href="#chicken">Chicken</a></li>
+                <li><a href="#beef">Beef</a></li>
+                <li><a href="#sushi">Sushi</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1 class="text-center">Our Menu</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <section class="col-xs-12 menu-section" id="chicken">
+                <h2>Chicken</h2>
+
+                <p>
+                    Welcome to Food, LLC! Enjoy exploring our menu
+                    and discovering delicious food made with fresh
+                    ingredients. We believe that great food brings
+                    people together.
+                </p>
+
+                <p>
+                    Thank you for visiting Food, LLC. We hope you
+                    enjoy your meal and have a wonderful day!
+                </p>
+            </section>
+        </div>
+    </div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
